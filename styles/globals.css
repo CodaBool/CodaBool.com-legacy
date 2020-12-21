@@ -1,6 +1,14 @@
 /* TODO: use of !important is not ideal. There should be a better solution */
 /* the problem is writing this code in the .module does not seem to work */
 
+/* Posts */
+.post {
+  cursor: pointer;
+}
+.post:hover, .post:active {
+  background-color: #e2edf6;
+}
+
 .video-grid {
   width: 49% !important;
   display: inline-block !important;
