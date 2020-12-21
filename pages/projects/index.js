@@ -58,6 +58,20 @@ export default function Projects() {
         tags={['React']}
         delay={1600}
       />
+      <ProjectBox
+        title="Project 6"
+        description="Senior fullstack project to assist with spotting human trafficking and reporting it. This is a social media site to make posts with images and make comments about missing people."
+        link="/projects/6"
+        tags={['React', 'Express', 'MongoDB', 'AWS S3']}
+        delay={1600}
+      />
+      <ProjectBox
+        title="Project 7"
+        description="Fullstack Nextjs e-commerce project. My most complete project yet. Connects to Stripe and a PostgresQL database to allow for products to be added to cart and checked out. Many different tools involved here. Check it out!"
+        link="/projects/7"
+        tags={['Nextjs', 'Express', 'Stripe', 'PostgresQL']}
+        delay={1600}
+      />
     </div>
   )
 }
