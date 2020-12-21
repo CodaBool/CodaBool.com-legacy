@@ -32,7 +32,7 @@ export default function About() {
             <h1 className="display-4 m-2">About me. 💻</h1>
           </Fade>
           <Fade delay={3000}>
-            <h3 className="m-1">&emsp;I just graduated this semester of 2020. My major is B.A.S. Computing Technology and Software Development. I am learning web developer frameworks like React and Django. For my internship I am learning devops configuring AWS with Jenkins and Ansible. </h3>
+            <h3 className="m-1">&emsp;I just December of 2020. My Bachelors is in Computing Technology and Software Development. I am a fullstack web developer. For my internship I am learning devops configuring AWS with Jenkins and Ansible. </h3>
           </Fade>
         </Col>
         <Col lg={6}>
