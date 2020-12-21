@@ -1,6 +1,16 @@
 /* TODO: use of !important is not ideal. There should be a better solution */
 /* the problem is writing this code in the .module does not seem to work */
 
+/* gets the footer to be pinned to the bottom of the page */
+.site {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+.site-content {
+  flex: 1;
+}
+
 /* Emoji sway */
 .sway {
   animation: sway 5s infinite;
