@@ -36,44 +36,12 @@ export default function Projects() {
       <hr />
       <Row>
         <ProjectBox
-          description="Mock Photography website"
-          link="/projects/1"
-          tags={['JavaScript']}
-          delay={0}
-          year={2015}
-          image="/assets/coverImg/photo-cover.jpg"
-        />
-        <ProjectBox
-          description="Mock Tech Support website with JavaScript form validation project"
-          link="/projects/2"
-          tags={['JavaScript']}
-          delay={200}
-          year={2018}
-          image="/assets/coverImg/tech-cover.jpg"
-        />
-        <ProjectBox
-          description="Django Blog using Bootstrap. Hosted using Heroku"
-          link="/projects/3"
-          tags={['Django']}
-          delay={400}
-          year={2019}
-          image="/assets/coverImg/dj-blog-cover.jpg"
-        />
-        <ProjectBox
-          description="Django Social Media site using Bootstrap, Misaka and django-braces. Hosted using Heroku"
-          link="/projects/4"
-          tags={['Django']}
-          delay={600}
-          year={2019}
-          image="/assets/coverImg/dj-social-cover.jpg"
-        />
-        <ProjectBox
-          description="React Dashboard. Sample of a currently used production page created in my intern postion at Ellucian"
-          link="/projects/5"
-          tags={['React']}
+          description="Fullstack Nextjs e-commerce project. My most complete project yet. Connects to Stripe and a PostgresQL database to allow for products to be added to cart and checked out. Many different tools involved here. Check it out!"
+          link="/projects/7"
+          tags={['Nextjs', 'Express', 'Stripe', 'PostgresQL']}
           delay={0}
           year={2020}
-          image="/assets/coverImg/ecrm-dashboard.jpg"
+          image="/assets/coverImg/market.jpg"
         />
         <ProjectBox
           description="Senior fullstack project to assist with spotting human trafficking and reporting it. This is a social media site to make posts with images and make comments about missing people."
@@ -84,12 +52,44 @@ export default function Projects() {
           image="/assets/coverImg/traffick.jpg"
         />
         <ProjectBox
-          description="Fullstack Nextjs e-commerce project. My most complete project yet. Connects to Stripe and a PostgresQL database to allow for products to be added to cart and checked out. Many different tools involved here. Check it out!"
-          link="/projects/7"
-          tags={['Nextjs', 'Express', 'Stripe', 'PostgresQL']}
+          description="React Dashboard. Sample of a currently used production page created in my intern postion at Ellucian"
+          link="/projects/5"
+          tags={['React']}
           delay={0}
           year={2020}
-          image="/assets/coverImg/market.jpg"
+          image="/assets/coverImg/ecrm-dashboard.jpg"
+        />
+        <ProjectBox
+          description="Django Social Media site using Bootstrap, Misaka and django-braces. Hosted using Heroku"
+          link="/projects/4"
+          tags={['Django']}
+          delay={600}
+          year={2019}
+          image="/assets/coverImg/dj-social-cover.jpg"
+        />
+        <ProjectBox
+          description="Django Blog using Bootstrap. Hosted using Heroku"
+          link="/projects/3"
+          tags={['Django']}
+          delay={400}
+          year={2019}
+          image="/assets/coverImg/dj-blog-cover.jpg"
+        />
+        <ProjectBox
+          description="Mock Tech Support website with JavaScript form validation project"
+          link="/projects/2"
+          tags={['JavaScript']}
+          delay={200}
+          year={2018}
+          image="/assets/coverImg/tech-cover.jpg"
+        />
+        <ProjectBox
+          description="Mock Photography website"
+          link="/projects/1"
+          tags={['JavaScript']}
+          delay={0}
+          year={2015}
+          image="/assets/coverImg/photo-cover.jpg"
         />
       </Row>
     </div>
