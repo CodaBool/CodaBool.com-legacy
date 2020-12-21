@@ -18,7 +18,7 @@ export default function About() {
         </Col>
         <Col lg={6} className="mb-4">
           <Fade bottom>
-            <h1 className="display-4 m-2">Hello, 👋</h1>
+            <h1 className="display-4 m-2">Hello, <div className="sway d-inline-block">👋</div></h1>
           </Fade>
           <Fade delay={1000}>
             <h3 className="m-1">&emsp;I'm newly graduated, an active developer and a devops intern. I work for a company called Ellucian which offers IT solutions for higher education. Please feel free to look around at my projects, blog or reach out to me. Thanks for visiting. </h3>

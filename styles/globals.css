@@ -1,6 +1,15 @@
 /* TODO: use of !important is not ideal. There should be a better solution */
 /* the problem is writing this code in the .module does not seem to work */
 
+/* Emoji sway */
+.sway {
+  animation: sway 5s infinite;
+}
+@keyframes sway { 
+  0% { transform: rotate(0deg); } 
+  50% { transform: rotate(10deg); } 
+  100% { transform: rotate(0deg); } 
+}
 /* Posts */
 .post {
   cursor: pointer;
