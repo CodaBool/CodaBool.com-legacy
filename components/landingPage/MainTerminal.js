@@ -10,6 +10,7 @@ import Fade from 'react-reveal/Fade'
 import {progressBar, spinner} from './Type'
 import TerminalAnimation from 'react-animated-term'
 import SimpleBar from 'simplebar-react'
+import { Nav } from 'react-bootstrap'
 
 const FileSystemPlugin = pseudoFileSystemPlugin()
 
@@ -30,13 +31,11 @@ export default function MainTerminal() {
     <div id="indexBody">
       {!showFakeTerminal && <Morph />}
       <Fade when={showNav}>
-        <>
-          <div className="nav-group">
-            <a className="nav-link text-light text-center" href="/projects"><h2>Projects</h2></a>
-            <a className="nav-link text-light text-center" href="/blog"><h2>Blog</h2></a>
-            <a className="nav-link text-light text-center" href="/contact"><h2>Contact</h2></a>
-          </div>
-        </>
+        <div className="nav-group terminalNav">
+          <Nav.Link className="text-light text-center" href="/projects">Projects</Nav.Link>
+          <Nav.Link className="text-light text-center" href="/blog">Blog</Nav.Link>
+          <Nav.Link className="text-light text-center" href="/contact">Contact</Nav.Link>
+        </div>
       </Fade>
       <Container>
           <div className="terminalBorder">

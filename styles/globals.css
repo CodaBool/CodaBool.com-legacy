@@ -43,10 +43,19 @@
 .nav-link, .navbar-brand {
   cursor: pointer;
   font-size: 2em !important;
-  margin: 0 29px 0 29px; 
+  line-height: 1 !important;
+  margin: 20px 29px 0 29px;
 }
+/* Navigation Bar on the landing page */
 
 @media (max-width: 767px) {
+  .terminalNav {
+    width: 100% !important;
+  }
+  .terminalNav a {
+    margin: 10px 0 0 0;
+    font-size: 1em !important;
+  }
   code[class*="language-"],
   pre[class*="language-"] {
     font-size: 1em;
@@ -60,12 +69,9 @@
   .image-grid {
     width: 100% !important;
   }
-
-
-  .display-1, .display-2 {
+  .display-1, .display-2, .display-3 {
     font-size: 3rem !important;
   }
-
   h2 {
     font-size: 1.5rem;
   }

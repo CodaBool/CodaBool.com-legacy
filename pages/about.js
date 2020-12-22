@@ -39,9 +39,7 @@ export default function About() {
           <img
             src="/assets/images/gamejam-group.jpg"
             alt="group"
-            className="shadow rounded"
-            width={450}
-            height={300}
+            className="shadow rounded w-100"
           />
         </Col>
       </Row>
