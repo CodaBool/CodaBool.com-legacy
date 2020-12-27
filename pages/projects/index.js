@@ -36,6 +36,14 @@ export default function Projects() {
       <hr />
       <Row>
         <ProjectBox
+          description="Machine Learning search engine for internal company systems. Using ElasticSearch with current data loaded from several systems. This search engine will provide links and short descriptions similar to Google."
+          link="/projects/8"
+          tags={['React', 'Express', 'ElasticSearch', 'Python']}
+          delay={0}
+          year={2020}
+          image="/assets/coverImg/react-search.jpg"
+        />
+        <ProjectBox
           description="Fullstack Nextjs e-commerce project. My most complete project yet. Connects to Stripe and a PostgresQL database to allow for products to be added to cart and checked out. Many different tools involved here. Check it out!"
           link="/projects/7"
           tags={['Nextjs', 'Express', 'Stripe', 'PostgresQL']}

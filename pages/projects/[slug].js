@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import { useRouter } from 'next/router'
-const PROJECT_COUNT = 7 // used for static render of pages at build time (getStaticPaths)
+const PROJECT_COUNT = 8 // used for static render of pages at build time (getStaticPaths)
 
 export default function Project({ slug }) {
   const router = useRouter()
@@ -13,6 +13,7 @@ export default function Project({ slug }) {
       case '5': router.push('https://codabool-react-dashboard.herokuapp.com'); break
       case '6': router.push('https://codabool-nextjs-social.herokuapp.com'); break
       case '7': router.push('https://codabool-nextjs-market.herokuapp.com'); break
+      case '8': router.push('https://codabool-react-search.herokuapp.com'); break
       default: router.push('/projects')
     }
   }, [])
