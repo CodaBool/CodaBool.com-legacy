@@ -61,22 +61,21 @@
   }
   code[class*="language-"],
   pre[class*="language-"] {
-    font-size: 1em;
-    font-weight: 400;
+    font-size: 1em !important;
+    font-weight: 400 !important;
   }
-
-  .video-grid {
-    width: 100% !important;
+  /* blog size adjustments for mobile */
+  p {
+    font-size: 1rem !important;
   }
-
-  .image-grid {
+  .video-grid, .image-grid {
     width: 100% !important;
   }
   .display-1, .display-2, .display-3 {
     font-size: 3rem !important;
   }
-  h2 {
-    font-size: 1.5rem;
+  h1, h2 {
+    font-size: 1.5rem !important;
   }
 }
 
