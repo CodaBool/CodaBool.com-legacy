@@ -224,6 +224,29 @@ export const spinner = [
   }
 ]
 
+export const redirectSpinner = [ // 🚦💤✔️ 🗺️ 🖥️
+  {
+    text: '🗺️ Found Project',
+    cmd: false,
+    frames: createSpinnerFrames(SPINNER, ' Finding Project', 3, 100)
+  },
+  {
+    text: '💤 Heroku Waking',
+    cmd: false,
+    frames: createSpinnerFrames(SPINNER, ' Waking Heroku', 3, 100)
+  },
+  {
+    text: '🖥️ Server Woken',
+    cmd: false,
+    frames: createSpinnerFrames(SPINNER, ' Waking Server', 3, 100)
+  },
+  {
+    text: '✔️ All Ready',
+    cmd: false,
+    frames: createSpinnerFrames(SPINNER, ' Redirecting', 3, 100)
+  },
+]
+
 export const basic = [
   {
     text: 'ls',

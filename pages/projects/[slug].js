@@ -1,5 +1,9 @@
 import React, { useEffect } from 'react'
 import { useRouter } from 'next/router'
+import Row from 'react-bootstrap/Row'
+import { redirectSpinner } from '../../components/landingPage/Type'
+import TerminalAnimation from 'react-animated-term'
+
 const PROJECT_COUNT = 8 // used for static render of pages at build time (getStaticPaths)
 
 export default function Project({ slug }) {
@@ -19,7 +23,22 @@ export default function Project({ slug }) {
   }, [])
 
   return (
-    <p style={{margin: "15% auto 0 auto", textAlign: "center"}}>Redirecting . . . <br />This can take up to 15 seconds</p>
+    <>
+      <Row className="mt-5">
+        <div className="mx-auto mt-5">
+          <h5 className="mt-5">
+            Redirecting 
+            <span className="fade1"> . </span>
+            <span className="fade2"> . </span>
+            <span className="fade3"> . </span>
+          </h5>
+          <TerminalAnimation
+            lines={redirectSpinner}
+            interval={5}
+          />
+        </div>
+      </Row>
+    </>
   )
 }
 

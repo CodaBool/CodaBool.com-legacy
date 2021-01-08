@@ -424,6 +424,22 @@
 	100% { background-position: 0% 50%; }
 }
 
+/* project text fade */
+.fade1 {
+  animation: fade 4s infinite;
+}
+.fade2 {
+  animation: fade 5s infinite;
+}
+.fade3 {
+  animation: fade 6s infinite;
+}
+@keyframes fade {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+
 /* PrismJS 1.22.0
 Prism [docs](https://prismjs.com/)
 download [page](https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+clike+javascript+css-extras+diff+docker+git+graphql+java+js-extras+kotlin+markdown+markup-templating+php+python+jsx+tsx+sass+scss+sql+typescript&plugins=line-numbers+inline-color+command-line+toolbar+copy-to-clipboard+match-braces+diff-highlight+treeview)
