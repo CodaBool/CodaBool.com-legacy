@@ -65,13 +65,13 @@
     font-weight: 400 !important;
   }
   /* blog size adjustments for mobile */
-  p {
+  p, li {
     font-size: 1rem !important;
   }
   .video-grid, .image-grid {
     width: 100% !important;
   }
-  .display-1, .display-2, .display-3 {
+  .display-1, .display-2, .display-3, .display-4 {
     font-size: 3rem !important;
   }
   h1, h2 {

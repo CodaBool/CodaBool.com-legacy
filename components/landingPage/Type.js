@@ -153,7 +153,7 @@ export const progressBar = [
     cmd: false,
   },
   {
-    text: '- 🎓 I am currently a student and graduate this year',
+    text: '- 🎓 I have graduated with a bachelors degree in Computing Technology and Software Development',
     cmd: false,
   },
   {

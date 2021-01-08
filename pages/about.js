@@ -57,7 +57,7 @@ export default function About() {
           <Fade bottom>
             <h1 className="display-4 m-2">Hello, <div className="sway d-inline-block">👋</div></h1>
           </Fade>
-          <Fade delay={1000}>
+          <Fade delay={500}>
             <h3 className="m-1">&emsp;I'm newly graduated, an active developer and a devops intern. I work for a company called Ellucian which offers IT solutions for higher education. Please feel free to look around at my projects, blog or reach out to me. Thanks for visiting. </h3>
           </Fade>
         </Col>
@@ -65,10 +65,10 @@ export default function About() {
       <br/>
       <Row>
         <Col lg={6} className="mb-4">
-          <Fade bottom delay={2000}>
+          <Fade bottom delay={1000}>
             <h1 className="display-4 m-2">About me. 💻</h1>
           </Fade>
-          <Fade delay={3000}>
+          <Fade delay={1500}>
             <h3 className="m-1">&emsp;I graduated December of 2020. My Bachelors is in Computing Technology and Software Development. I am a fullstack web developer. I'm currently working for an internship in devops using AWS with Jenkins and Ansible.</h3>
           </Fade>
         </Col>
