@@ -9,7 +9,7 @@ export default function PostNav({ current, total }) {
     <Row>
       <Pagination className="mx-auto my-5" size="lg">
         {current > 1 && <Pagination.First onClick={() => {window.scrollTo(0, 0); router.push(`/blog/${current - 1}`)}} />}
-        <Pagination.Item onClick={() => {window.scrollTo(0, 0); router.push('/blog')}}><HouseDoorFill size={20}/></Pagination.Item>
+        <Pagination.Item onClick={() => {window.scrollTo(0, 0); router.push('/blog')}}><HouseDoorFill size={20} /></Pagination.Item>
         {current < total && <Pagination.Last onClick={() => {window.scrollTo(0, 0); router.push(`/blog/${Number(current) + 1}`)}} />}
       </Pagination>
     </Row>

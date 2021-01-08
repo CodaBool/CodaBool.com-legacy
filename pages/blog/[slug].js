@@ -8,9 +8,16 @@ import PostNav from '../../components/PostNav'
 import remark from 'remark'
 import html from 'remark-html'
 import { getPost, getSlugs } from '../../lib/api'
+import Comments from '../../components/Comments'
+import axios from 'axios'
 
 export default function BlogSlug({ post, total }) {
   useEffect(() => Prism.highlightAll(), [])
+  useEffect(() => {
+    axios.put('/api/putPost', {post_id: post.slug})
+      // .then(res => console.log('updated post view count to', res.data))
+      // .catch(err => console.log(err.response))
+  }, [post.slug])
 
   return (
     <>
@@ -38,6 +45,7 @@ export default function BlogSlug({ post, total }) {
         dangerouslySetInnerHTML={{ __html: post.content }}
       />
       <PostNav total={total} current={post.slug} />
+      <Comments post_id={post.slug}/>
     </>
   )
 }

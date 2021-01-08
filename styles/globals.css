@@ -401,6 +401,29 @@
   }
 }
 
+/*override Bootstrap Accordian Style */
+.card-header:not(.colorless) {
+  font-weight: 500;
+  font-size: 1.4em;
+  background: linear-gradient(-45deg, #2a85d450, #527da350, #0d11ee50, #2fe0e050);
+	background-size: 400% 400%;
+  -webkit-animation: gradient 20s ease infinite;
+  animation: gradient 20s ease infinite;
+}
+.card-header {
+  cursor: pointer;
+}
+@-webkit-keyframes gradient {
+	0% { background-position: 0% 50%; }
+	50% { background-position: 100% 50%; }
+	100% { background-position: 0% 50%; }
+}
+@keyframes gradient {
+	0% { background-position: 0% 50%; }
+	50% { background-position: 100% 50%; }
+	100% { background-position: 0% 50%; }
+}
+
 /* PrismJS 1.22.0
 Prism [docs](https://prismjs.com/)
 download [page](https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+clike+javascript+css-extras+diff+docker+git+graphql+java+js-extras+kotlin+markdown+markup-templating+php+python+jsx+tsx+sass+scss+sql+typescript&plugins=line-numbers+inline-color+command-line+toolbar+copy-to-clipboard+match-braces+diff-highlight+treeview)

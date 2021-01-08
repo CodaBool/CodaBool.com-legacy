@@ -1,14 +1,51 @@
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
+import Modal from 'react-bootstrap/Modal'
+import Button from 'react-bootstrap/Button'
+import Form from 'react-bootstrap/Form'
 import Fade from 'react-reveal/Fade'
-// import Image from 'next/image'
+import { useRef, useState } from 'react'
+import axios from 'axios'
+
+let count = 0
 
 export default function About() {
+  const [show, setShow] = useState(false);
+  const password = useRef(null)
+
+  function adminCheck() {
+    count++
+    if (count > 5) {
+      setShow(true)
+      setTimeout(() => {
+        if (password) {
+          if (password.current) {
+            password.current.value = ''
+            password.current.focus()
+          }
+        }
+      }, 500)
+    }
+  }
+  function login() {
+    axios.post('/api/login', { password: password.current.value })
+      .then(res => alert('Successfully logged in!'))
+      .catch(err => console.log(err.response.data))
+  }
+
+  function checkEnter(e) {
+    if (e.keyCode === 13) {
+      login()
+      setShow(false)
+    }
+  }
+
   return (
     <div className="my-5">
       <Row>
         <Col lg={6} className="mt-4">
           <img
+            onClick={adminCheck}
             src="/assets/authorImg/codabool-lg.jpg"
             alt="me"
             className="shadow rounded-circle"
@@ -43,6 +80,17 @@ export default function About() {
           />
         </Col>
       </Row>
+      <Modal show={show} onHide={() => setShow(false)}>
+        <Modal.Header closeButton>
+        <Modal.Title>Admin Login</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <Form.Control placeholder="password" onKeyDown={checkEnter} type="password" ref={password} />
+        </Modal.Body>
+        <Modal.Footer>
+          <Button variant="primary" onClick={login}>Login</Button>
+        </Modal.Footer>
+      </Modal>
     </div>
   )
 }
