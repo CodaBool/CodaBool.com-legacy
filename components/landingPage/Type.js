@@ -233,17 +233,17 @@ export const redirectSpinner = [ // 🚦💤✔️ 🗺️ 🖥️
   {
     text: '💤 Heroku Waking',
     cmd: false,
-    frames: createSpinnerFrames(SPINNER, ' Waking Heroku', 8, 100)
+    frames: createSpinnerFrames(SPINNER, ' Waking Heroku', 7, 100)
   },
   {
-    text: '🖥️ Server Woken',
+    text: '🖥️ Server Ready',
     cmd: false,
-    frames: createSpinnerFrames(SPINNER, ' Waking Server', 3, 100)
+    frames: createSpinnerFrames(SPINNER, ' Loading Project', 2, 100)
   },
   {
     text: '✔️ All Ready',
     cmd: false,
-    frames: createSpinnerFrames(SPINNER, ' Redirecting', 3, 100)
+    frames: createSpinnerFrames(SPINNER, ' Redirecting', 1, 100)
   },
 ]
 
