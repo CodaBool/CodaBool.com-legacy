@@ -233,7 +233,7 @@ export const redirectSpinner = [ // 🚦💤✔️ 🗺️ 🖥️
   {
     text: '💤 Heroku Waking',
     cmd: false,
-    frames: createSpinnerFrames(SPINNER, ' Waking Heroku', 3, 100)
+    frames: createSpinnerFrames(SPINNER, ' Waking Heroku', 8, 100)
   },
   {
     text: '🖥️ Server Woken',
