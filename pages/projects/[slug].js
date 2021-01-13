@@ -16,7 +16,7 @@ export default function Project({ slug }) {
       case '4': router.push('https://codabool-django-social.herokuapp.com'); break
       case '5': router.push('https://codabool-react-dashboard.herokuapp.com'); break
       case '6': router.push('https://codabool-nextjs-social.herokuapp.com'); break
-      case '7': router.push('https://codabool-nextjs-market.herokuapp.com'); break
+      case '7': router.push('https://market.codabool.vercel.app'); break
       case '8': router.push('https://codabool-react-search.herokuapp.com'); break
       default: router.push('/projects')
     }
