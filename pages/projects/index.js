@@ -37,7 +37,7 @@ export default function Projects() {
       <Row>
         <ProjectBox
           description="Machine Learning search engine for internal company systems. Using ElasticSearch with current data loaded from several systems. This search engine will provide links and short descriptions similar to Google."
-          link="/projects/8"
+          link="/projects/9"
           tags={['React', 'Express', 'ElasticSearch', 'Python']}
           delay={0}
           year={2020}
@@ -45,7 +45,7 @@ export default function Projects() {
         />
         <ProjectBox
           description="Fullstack Nextjs e-commerce project. My most complete project yet. Connects to Stripe and a PostgresQL database to allow for products to be added to cart and checked out. Many different tools involved here. Check it out!"
-          link="/projects/7"
+          link="/projects/8"
           tags={['Nextjs', 'Express', 'Stripe', 'PostgresQL']}
           delay={0}
           year={2020}
@@ -53,7 +53,7 @@ export default function Projects() {
         />
         <ProjectBox
           description="Senior fullstack project to assist with spotting human trafficking and reporting it. This is a social media site to make posts with images and make comments about missing people."
-          link="/projects/6"
+          link="/projects/7"
           tags={['React', 'Express', 'MongoDB', 'AWS S3']}
           delay={0}
           year={2020}
@@ -61,7 +61,7 @@ export default function Projects() {
         />
         <ProjectBox
           description="React Dashboard. Sample of a currently used production page created in my intern postion at Ellucian"
-          link="/projects/5"
+          link="/projects/6"
           tags={['React']}
           delay={0}
           year={2020}
@@ -69,17 +69,25 @@ export default function Projects() {
         />
         <ProjectBox
           description="Django Social Media site using Bootstrap, Misaka and django-braces. Hosted using Heroku"
-          link="/projects/4"
+          link="/projects/5"
           tags={['Django']}
-          delay={600}
+          delay={0}
           year={2019}
           image="/assets/coverImg/dj-social-cover.jpg"
+        />
+        <ProjectBox
+          description="Simple photo search application. Made for a web dev. application. Uses Flickr API to get 20 photos from the tags searched"
+          link="/projects/4"
+          tags={['API', 'React']}
+          delay={0}
+          year={2021}
+          image="/assets/coverImg/flickr.png"
         />
         <ProjectBox
           description="Django Blog using Bootstrap. Hosted using Heroku"
           link="/projects/3"
           tags={['Django']}
-          delay={400}
+          delay={0}
           year={2019}
           image="/assets/coverImg/dj-blog-cover.jpg"
         />
@@ -87,7 +95,7 @@ export default function Projects() {
           description="Mock Tech Support website with JavaScript form validation project"
           link="/projects/2"
           tags={['JavaScript']}
-          delay={200}
+          delay={0}
           year={2018}
           image="/assets/coverImg/tech-cover.jpg"
         />
