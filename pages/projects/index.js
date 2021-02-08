@@ -36,6 +36,14 @@ export default function Projects() {
       <hr />
       <Row>
         <ProjectBox
+          description="Type Racing Game built in React with Web Sockets. Features multiplayer lobby with live chat, typing stats, and scoreboard."
+          link="/projects/10"
+          tags={['MongoDB', 'Web Sockets', 'React', 'Express']}
+          delay={0}
+          year={2021}
+          image="/assets/coverImg/race-cover.png"
+        />
+        <ProjectBox
           description="Machine Learning search engine for internal company systems. Using ElasticSearch with current data loaded from several systems. This search engine will provide links and short descriptions similar to Google."
           link="/projects/9"
           tags={['React', 'Express', 'ElasticSearch', 'Python']}

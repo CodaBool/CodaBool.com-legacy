@@ -4,7 +4,7 @@ import Row from 'react-bootstrap/Row'
 import { redirectSpinner } from '../../components/landingPage/Type'
 import TerminalAnimation from 'react-animated-term'
 
-const PROJECT_COUNT = 9 // used for static render of pages at build time (getStaticPaths)
+const PROJECT_COUNT = 10 // used for static render of pages at build time (getStaticPaths)
 
 export default function Project({ slug }) {
   const router = useRouter()
@@ -19,6 +19,7 @@ export default function Project({ slug }) {
       case '7': router.push('https://codabool-nextjs-social.herokuapp.com'); break
       case '8': router.push('https://market.codabool.vercel.app'); break
       case '9': router.push('https://codabool-react-search.herokuapp.com'); break
+      case '10': router.push('https://codabool-type-racer.herokuapp.com'); break
       default: router.push('/projects')
     }
   }, [])
