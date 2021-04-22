@@ -10,7 +10,7 @@
   "dependencies": {
     "axios": "^0.21.1",
     "bootstrap": "^4.5.3",
-    "custom-terminal-in-react": "^1.0.1",
+    "custom-terminal-in-react": "^1.0.0",
     "gray-matter": "^4.0.2",
     "next": "^10.0.5",
     "nookies": "^2.5.0",

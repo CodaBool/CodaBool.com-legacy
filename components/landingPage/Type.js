@@ -187,7 +187,7 @@ export const progressBar = [
     cmd: false,
   },
   {
-    text: 'npm start',
+    text: 'yarn start',
     cmd: true,
     delay: 80
   },
