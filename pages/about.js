@@ -58,7 +58,7 @@ export default function About() {
             <h1 className="display-4 m-2">Hello, <div className="sway d-inline-block">👋</div></h1>
           </Fade>
           <Fade delay={500}>
-            <h3 className="m-1">&emsp;I'm newly graduated, an active developer and a devops intern. I work for a company called Ellucian which offers IT solutions for higher education. Please feel free to look around at my projects, blog or reach out to me. Thanks for visiting. </h3>
+            <h3 className="m-1">&emsp;I am a DevOps engineer, but I also do full-stack development outside of work. I mainly work with AWS and for my full stack projects I enjoy Next.js  which uses serverless technology for its backend. I like to use MongoDB for my database solutions. Please feel free to look around at my projects, blog or reach out to me. Thanks for visiting. </h3>
           </Fade>
         </Col>
       </Row>
@@ -69,7 +69,7 @@ export default function About() {
             <h1 className="display-4 m-2">About me. 💻</h1>
           </Fade>
           <Fade delay={1500}>
-            <h3 className="m-1">&emsp;I graduated December of 2020. My Bachelors is in Computing Technology and Software Development. I am a fullstack web developer. I'm currently working for an internship in devops using AWS with Jenkins and Ansible.</h3>
+            <h3 className="m-1">&emsp;I graduated December of 2020. My Bachelors is in Computing Technology and Software Development. I am pursuing my Master's degree in Computer Science at Georgia Tech Online. I put all my projects as public open source on github under <a href="https://github.com/CodaBool?tab=repositories" style={{textDecoration: 'none', color: 'black'}}>CodaBool</a>, so take a look. </h3>
           </Fade>
         </Col>
         <Col lg={6}>

@@ -12,7 +12,7 @@ export default function Footer() {
               {/* About */}
               <hr />
               <p className="text-muted text-center">
-                I work as a devops intern for Ellucian and do web development. I run this as a personal blog and hub for my projects. If you are interested in contacting me my business email is:
+                DevOps Engineer and Full-stack Dev. I run this as a personal blog and hub for my projects. If you are interested in contacting me my business email is:
               </p>
               <p className="text-center"><a href="mailto:codabool@pm.me">CodaBool@pm.me</a></p>
           </Col>

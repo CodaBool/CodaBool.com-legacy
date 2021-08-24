@@ -14,7 +14,7 @@ config({ ssrFadeout: true })
 export default function MyApp({ Component, pageProps }) {
   const router = useRouter()
 
-  if (router.asPath === '/' || router.asPath.includes('/projects/')) { // landing page
+  if (router.asPath === '/' || router.asPath.includes('/projects/')) { // landing page & redirect
     return (
       <>
         <Head>

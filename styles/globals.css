@@ -99,6 +99,13 @@
   font-size: 4em;
 }
 
+#ext {
+  color: #6c757d;
+}
+#ext:hover {
+  color: #6f9dc5;
+}
+
 @media (max-width: 901px) { /* screen widths at 901px and ABOVE */
   .vertical {
     width: 100% !important;

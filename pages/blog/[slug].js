@@ -15,8 +15,8 @@ export default function BlogSlug({ post, total }) {
   useEffect(() => Prism.highlightAll(), [])
   useEffect(() => {
     axios.put('/api/putPost', {post_id: post.slug})
-      // .then(res => console.log('updated post view count to', res.data))
-      // .catch(err => console.log(err.response))
+      .then(res => console.log('updated post view count to', res.data))
+      .catch(err => console.log(err.response))
   }, [post.slug])
 
   return (
