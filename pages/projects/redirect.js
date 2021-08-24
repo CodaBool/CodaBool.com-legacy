@@ -2,22 +2,23 @@ import React, { useEffect, useState } from 'react'
 import { useRouter } from 'next/router'
 import Row from 'react-bootstrap/Row'
 import Button from 'react-bootstrap/Button'
-import Container from 'react-bootstrap/Container'
 import { redirectSpinner } from '../../components/landingPage/Type'
 import TerminalAnimation from 'react-animated-term'
 
-const PROJECT_COUNT = 10 // used for static render of pages at build time (getStaticPaths)
-
-export default function Project({ slug }) {
+export default function Project() {
   const [error, setError] = useState()
   const router = useRouter()
 
   useEffect(() => {
-    switch(router.query.id) {
-      case 'django-1': router.push('https://codabool-django-blog.herokuapp.com'); break
-      case 'django-2': router.push('https://codabool-django-social.herokuapp.com'); break
-      case '8': router.push('https://p08-type-racer.herokuapp.com'); break
-      default: setError(true)
+    if (router.query.id === 'django-1') {
+      router.push('https://codabool-django-blog.herokuapp.com')
+    } else if (router.query.id === 'django-2') {
+      router.push('https://codabool-django-social.herokuapp.com')
+    } else if (router.query.id === '8') {
+      router.push('https://codabool-django-social.herokuapp.com')
+    } else if (router.query.id?.length > 0) {
+      console.error('unknown route of', router.query.id)
+      setError(true)
     }
   }, [router])
 

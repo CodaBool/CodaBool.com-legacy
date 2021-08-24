@@ -3,7 +3,8 @@ import Badge from 'react-bootstrap/Badge'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Card from 'react-bootstrap/Card'
-import router, { useRouter } from 'next/router'
+import { useRouter } from 'next/router'
+import Img from 'next/image'
 import { BoxArrowUpRight } from 'react-bootstrap-icons'
 
 const ProjectBox = ({ description, link, delay, tags, year, image, id, title }) => {
@@ -20,7 +21,7 @@ const ProjectBox = ({ description, link, delay, tags, year, image, id, title }) 
   return (
     <Col md={6}>
       <Card className="post my-4 shadow rounded" id={id} onClick={e => handleClick(e, link)}>
-        <Card.Img src={image} />
+        <Img src={image} className="card-img" width={538} height={269} />
         <Fade delay={delay}>
           <Card.Body>
             <h4>{title}</h4>
@@ -45,8 +46,8 @@ const ProjectBox = ({ description, link, delay, tags, year, image, id, title }) 
 
 export default function Projects() {
   return (
-    <div className="my-5">
-      <h1 className="display-2 m-4">My Projects. 🔨</h1>
+    <div className="my-3">
+      <h1 className="display-2 m-4">Projects 🔨</h1>
       <hr />
       <Row>
         <ProjectBox
