@@ -15,7 +15,7 @@ export default function Project() {
     } else if (router.query.id === 'django-2') {
       router.push('https://codabool-django-social.herokuapp.com')
     } else if (router.query.id === '8') {
-      router.push('https://codabool-django-social.herokuapp.com')
+      router.push('https://p08-type-racer.herokuapp.com')
     } else if (router.query.id?.length > 0) {
       console.error('unknown route of', router.query.id)
       setError(true)
